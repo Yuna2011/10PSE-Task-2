@@ -19,11 +19,11 @@ Yuna Shin
 ## Plan
 | Step | Why | Expected Result | Time |  
 | --- | --- | --- | --- |
-| 1. Part D | I will do this first in order to make sure that I know what attributes and classes I will need to create. | My game. | 30 minutes |
+| 1. Part D | I will do this first in order to make sure that I know what attributes and classes I will need to create. | The design of my game, something to fix in the future and its appropriate structure chart. | 1 hour |
 | 2. Part A | As soon as I have a an idea for my game, I will create my attrubutes and rank them. | My 6 attributes ranked with an explanation for each. | 2 hours |
 | 3. Part B | I will design the classes so that I will be able to move onto the next step which will be rearranging them into a UML class diagram. | All my classes listed with their respective attributes, methods and its role in the system. | 2 hours |
 | 4. Part C | After all my classes are finished, I will be able to create a UML class diagrams including all the relationships. | A finished UML class diagram. | 1 hour |
-| 5. Part E | Now that the classes and their information is all finished and I have the my game set out, I will be able to design the card and the basic interface of my game. | Finished card and interface design with labels and annotations explaining my design choices, clear layout of my information and storyboards or a walk through. | 5 hours |
+| 5. Part E | Now that the classes and their information is all finished and I have the my game set out, I will be able to design the card and the basic interface of my game. | Finished card and interface design with labels and annotations explaining my design choices, clear layout of my information and storyboards or a walk through. | 2 hours |
 | 6. Part F | After everything is done, I will be able to write out my social, ethical and legal implications without a problem. | Answered all the questiona of the social, ethical and legal implications. | 3 hours |
 | 7. Overall Review | After everything is done, I will need to make sure that my attributes, classes and the interface and card design all match my game. If they don't, I'll will slightly alter my game so that it will be able to match. | ASSESMENT TASK FINISHED !!| 1 hour |
 
@@ -34,6 +34,18 @@ Using car listings a inspiration:
 - Explain:
     - Why each attirbute was chosen
     - What makes an attribute fair or unfair in gameplay
+
+6 attributes 
+- price (19190 ~ 32000000)
+- horsepower (1 ~ 15000)
+- cool power (1500 ~ 15000)
+- curb wight (59 ~ 4500)
+- top speed (28 ~ 310)
+- acceleration (0.4 ~ 30)
+
+they would be fair as cars with low horsepower would take longer to accekerate but as the higher the number you win, having a card with a car with bad horsepower, prce, etc also has a chance of winning
+
+rankl them based on thier range. so like acceleratuibn nmight differ grwatly between cars so that would be ranked first while cool power differ less so it will be ranked last
 
 ## Part B - Class Design
 Design the object-oriented structure of your game.
@@ -73,17 +85,28 @@ Must include :
 - Identification of at least one unfair advantage and a proposed solution to fix it
 - A modelled structure chart
 
+2 ~ 4 people recommended
+- person to the left of the dealer goes first
+- everyone gets a pile of cards
+- you pick out the card at the top of your pile
+- call out the biggest attribute
+- everyone calls out their number for that attribute
+- person wiht the highest score gets to collect all the cards BUT they will either put the card in the middle or hand them over to the person who got the lowest score
+- if place in the middle, on the next turn the poerson with the higest attribute will either give the pile and the other addtional cards colelcted from that round to the person wihrt the lowest score or add the cards to the pile
+- the person who uses all their cards wins
+- you could choose the loser by goign tillk the very end until their is one person who lost all the rounds
+- when two people have the same highest attribute, the cards will automartically go into the pile as well as when there are 2 people with the lowest attrubite
 
-- player with all the cards at the end wins
-- highest score they take the cards from that round
-- 
-- player with the lowest takes all the cards
-- doubled, put in the middle
+the game is balanced because :
+- everyone gets the same number of cards (some should be taken out if there is an odd number)
+- everyone gets a turn calling out an attribute
+- everyone gets scareed and excited when the cards start to pile up in the middle and they dont know who mught get it next
+- when tyour about to win the pile might come to you
+- the game wont end as fast as the pile could go to anyone
 
-- highest point person chooses to give all cards to somebody or they cfan put it in the middle
-- if it is in the middle, the next person who wins can either add to that pile or choose someone and that someone gets all the cards incl;udng the pile in the middle
-- first player with no cards win 
-- you can lie your score?? ut if the otherz call you out everyone give cyou a card 
+- one unfair advantage is that people can pile the cards in the middle and target someone at the very end so that one perosn will either lose or have a harder time getting rid of their cards
+- a proposed solution could be that they can get a shield card but then they would have to pay the price like they have to take an extra card from everyone but they dont get the pile for a number of the next rounds or it would be like they can only add to the pile for up to 2 rounds and then on the 3rd, someone has to take it
+
 
 ## Part E - Interface and Car Design ( storyboards )
 Create :
@@ -114,3 +137,9 @@ Must include :
 ### Legal Considerations
 - What legal issues could arise from using real-world car data (e.g. ownership, copyright, accuracy)?
 - How would you ensure your system avoids misleading users?
+
+
+questions i need to ask:
+- what do tyou mean by a storyboard or a walk thorugh and how is that different from just explaining the game mechanics
+- check my strucute chart
+- check my uml class diagram
