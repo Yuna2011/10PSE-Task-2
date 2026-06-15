@@ -28,38 +28,23 @@ Yuna Shin
 | 7. Overall Review | After everything is done, I will need to make sure that my attributes, classes and the interface and card design all match my game. If they don't, I'll will slightly alter my game so that it will be able to match. | ASSESMENT TASK FINISHED !!| 1 hour |
 
 ## Part A - Data Selection and Game Attributes
-Using car listings a inspiration:
-- Select 6 attributes for your game (e.g. price, km, power)
-- Rank them from most powerful to least powerful in the game mechanics
-- Explain:
-    - Why each attirbute was chosen
-    - What makes an attribute fair or unfair in gameplay
-
-6 attributes 
-- price (19190 ~ 32000000)
-- horsepower (1 ~ 15000)
-- cool power (1500 ~ 15000)
-- curb wight (59 ~ 4500)
-- top speed (28 ~ 310)
-- acceleration (0.4 ~ 30)
-
-they would be fair as cars with low horsepower would take longer to accekerate but as the higher the number you win, having a card with a car with bad horsepower, prce, etc also has a chance of winning
-
-rankl them based on thier range. so like acceleratuibn nmight differ grwatly between cars so that would be ranked first while cool power differ less so it will be ranked last
-
-
 ### 1. Acceleration
 Acceleration is the most powerful attribute in the game because its range of 0.4 ~ 30 seconds is extremely wide and evenly distributed across many types of cars. This means the difference between the fastest and slowest cards is dramatic, making acceleration a highly decisive attribute when chosen. At first, acceleration might seem unfair since in real life, better cards accelerate faster, meaning a supercar with a 0.4 second time looks unbeatable. However, in the rules, the attribute with the highest number wins, which completely flips the logic. A car with a low price, low horsepower or generally a weak stats will usually has a slow acceleration time, and that slow time gives a higher number, meaning it can actually beat a supercar whose acceleration number is much lower. This makes acceleration both powerful and fair, because even the 'bad' cards have a real chance of winning against the strongest cards. The attribute stays impactful because the range is so large but it remains balanced because weaker card can outperform supercars under the scoring system of my game. 
 
 ### 2. Price
+Price is the second-most powerful attribute because its range is enormous, as the values stretch from everyday cars to ultra-luxury models worth tens of millions, creating a dramatic difference between the lowest and highest cards. This wide spread makes price an impactful category, since even a small shift in value can completely change the outcome of a round. It was chosen because price is a universally understood measure of a car's status, making it easy for players to grasp its importance. The attribute remains fair because the distribution of prices across the deck ensures that no single card becomes overwhelmingly dominant. The large ranges gives price strong influence, but the natural variation keeps it balance and unpredictable.  
 
 ### 3. Horsepower
+Horsepower represents the strength of a car's engine, and its values span from very low outputs to extremely powerful machines. This creates meaningful variation between cards, making horsepower an exciting and competitive attribute. It was chosen because it is one of the most recognisable car statistic, giving players a clear sense of the what the numbers represent. The attribute it fair because its range is wide enough to matter but not so extreme that it overshadows other categories. Horsepower influences outcomes in a noticeable but not extreme way, making it a reliable attribute that stays competitive without dominating. 
 
 ### 4. Cool Power
+Cool Power is the part of a car used to boost a vehicle's horsepower, giving the deck a statistic that feels different from the traditional car specifications. Its range is moderate, with values that differ enough to create competition but not enough to produce overwhelming advantages. This makes Cool Power a steady and balanced attribute where outcomes often feel close and unpredictable. It was chosen to add creativity, giving players a category that stands out conceptually. The controlled range ensures that Cool Power enhances gameplay without creating unfair or one-sided rounds. 
 
 ### 5. Curb Weight
+Curb Weight reflects how heavy a vehicle is, with values ranging from very lightweight models to much heavier ones. The range is noticeable but not extreme, which makes Curb Weight a more moderate and steady attribute. It was chosen because weight is a classic and realistic car statistic that fits naturally into a card‑based system. The attribute remains fair because its narrower spread prevents any card from gaining an overwhelming advantage, and the outcomes tend to be closer and more suspenseful. Curb Weight adds variety while maintaining balanced gameplay.
 
 ### 6. Top Speed
+Top Speed is the least powerful attribute because its values fall within a relatively tight range, with most cars reaching similar maximum speeds. This limited spread means that rounds decided by top speed are often close, with smaller differences between cards. It was chosen because top speed is one of the most iconic and easily recognized car statistics, making it a natural fit for the deck. The attribute is fair because no card gains a massive advantage from it, and the narrow range keeps outcomes unpredictable. Top Speed adds familiarity and excitement without dominating the overall balance.
 
 ## Part B - Class Design
 Design the object-oriented structure of your game.
@@ -69,11 +54,30 @@ Required classes :
 - Deck
 - Player
 - Game
+- Hand
 
 For each class :
 - List attributes
 - List methods
 - Describe its role in the system
+
+### Car
+The *Car* class represents the raw data for a vehicle, storing all attribute values used during comparisons. It acts as the foundational blueprint that all cars are built from. 
+
+### Card
+The *Card* class turns a *Car* into a playable game piece by presenting its attributes for use in each round. It serves as the object players draw, flip and compare. 
+
+### Deck
+The *Deck* class manages the full collection of cards, handling shuffling, dealing and any shared piles. It ensures randomness and proper setup for the game.
+
+### Hand 
+The *Hand* class represents the collection of cards a player currently holds after the deck is divided. It manages drawing, removing and adding cards during gameplay, acting as the player's active pile. 
+
+### Player
+The *Player* class represents a participant and stores their personal pile of cards. It performs actions such as flipping cards, choosing attributes and receiving lost cards. 
+
+### Game
+The *Game* class controls the overall flow, enforcing rules, managing turns, resolving rounds and determining when the game ends. It coordinates all other classes to run the gameplay loop. 
 
 
 
@@ -91,7 +95,7 @@ Must include :
 
 ## Part D - Game Mechanics Design
 ### How the game works :
-1. All players (recommended 2~4) receive an equal pile of cards
+1. All players (recommended 2~3) receive an equal pile of cards
 2. The player to the left of the dealer goes first
 3. Everyone flips over the top card of their pile
 4. The starting player chooses the biggest attribute on their card and calls it out
