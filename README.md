@@ -53,6 +53,13 @@ Acceleration is the most powerful attribute in the game because its range of 0.4
 
 ### 2. Price
 
+### 3. Horsepower
+
+### 4. Cool Power
+
+### 5. Curb Weight
+
+### 6. Top Speed
 
 ## Part B - Class Design
 Design the object-oriented structure of your game.
@@ -67,6 +74,9 @@ For each class :
 - List attributes
 - List methods
 - Describe its role in the system
+
+
+
 
 ## Part C - Class Diagram
 Create a UML class diagram including :
