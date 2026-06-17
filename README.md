@@ -1,19 +1,4 @@
-Class - OOP
-Game - Procedural
-
-- UML standards
-- HSC terminology ( no generalising )
-- technical terms ( technical language on the HSC - Syllabus, course specs )
-- optimal stage 
-
-- structure chart represents game mechanics
-- card design ( image, text, variables, datatypes ) = wireframe
-- interface sketch ( wireframe ) = think about screen size, standardized methods, etc. 
-- graphing in line 
-- documentation
-
-
-# Assessment Task 2 - Object-Orineted Design Project - Car Comparison Game
+# Assessment Task 2 - Object-Oriented Design Project - Car Comparison Game
 Yuna Shin
 
 ## Plan
@@ -38,8 +23,8 @@ Price is the second-most powerful attribute because its range is enormous, as th
 ### 3. Horsepower
 Horsepower represents the strength of a car's engine, and its values span from very low outputs to extremely powerful machines. This creates meaningful variation between cards, making horsepower an exciting and competitive attribute. It was chosen because it is one of the most recognisable car statistic, giving players a clear sense of the what the numbers represent. The attribute it fair because its range is wide enough to matter but not so extreme that it overshadows other categories. Horsepower influences outcomes in a noticeable but not extreme way, making it a reliable attribute that stays competitive without dominating. 
 
-### 4. Cool Power
-Cool Power is the part of a car used to boost a vehicle's horsepower, giving the deck a statistic that feels different from the traditional car specifications. Its range is moderate, with values that differ enough to create competition but not enough to produce overwhelming advantages. This makes Cool Power a steady and balanced attribute where outcomes often feel close and unpredictable. It was chosen to add creativity, giving players a category that stands out conceptually. The controlled range ensures that Cool Power enhances gameplay without creating unfair or one-sided rounds. 
+### 4. Cool Factor
+Cool Factor represents the unique flair, personality or iconic appeal of a car, giving the deck a statistic that feels different from traditional performance aspects. Its range is moderate, offering enough variation to create a competition without allowing any card to dominate, and it satys especially balanced as even older or weaker cars can score surprisingly high thanks to classic styling, nostalgic charm or a favourite status. This means decade-old models can genuinly outperform a modern supercar in this category, keeping rounds predictable and fair. Cool Factor was chosen to add creativity to the game, and its controlled spread combined with the fact that any car can be cool for different reasons ensures that the game remains fun and competitive.
 
 ### 5. Curb Weight
 Curb Weight reflects how heavy a vehicle is, with values ranging from very lightweight models to much heavier ones. The range is noticeable but not extreme, which makes Curb Weight a more moderate and steady attribute. It was chosen because weight is a classic and realistic car statistic that fits naturally into a card‑based system. The attribute remains fair because its narrower spread prevents any card from gaining an overwhelming advantage, and the outcomes tend to be closer and more suspenseful. Curb Weight adds variety while maintaining balanced gameplay.
@@ -49,55 +34,34 @@ Top Speed is the least powerful attribute because its values fall within a relat
 
 
 ## Part B - Class Design
-Design the object-oriented structure of your game.
-Required classes :
-- Car
-- Card
-- Deck
-- Player
-- Game
-- Hand
-
-For each class :
-- List attributes
-- List methods
-- Describe its role in the system
-
 ### Car
-The *Car* class represents the raw data for a vehicle, storing all attribute values used during comparisons. It acts as the foundational blueprint that all cars are built from. 
-![](./images/Car.png)
+The *Car* class represents the raw data for a vehicle, storing all attribute values used during comparisons. It acts as the foundational blueprint that all cars are built from.   
+<img src="./images/Car.png" width= "300" height= "350">
 
 ### Card
-The *Card* class turns a *Car* into a playable game piece by presenting its attributes for use in each round. It serves as the object players draw, flip and compare. 
-![](./images/Card.png)
+The *Card* class turns a *Car* into a playable game piece by presenting its attributes for use in each round. It serves as the object players draw, flip and compare.   
+<img src="./images/Card.png" width= "300" height= "300">
 
 ### Deck
-The *Deck* class manages the full collection of cards, handling shuffling, dealing and any shared piles. It ensures randomness and proper setup for the game.
-![](./images/Deck.png)
+The *Deck* class manages the full collection of cards, handling shuffling, dealing and any shared piles. It ensures randomness and proper setup for the game.  
+<img src="./images/Deck.png" width= "300" height= "350">
 
 ### Hand 
-The *Hand* class represents the collection of cards a player currently holds after the deck is divided. It manages drawing, removing and adding cards during gameplay, acting as the player's active pile. 
-![](./images/Hand.png)
+The *Hand* class represents the collection of cards a player currently holds after the deck is divided. It manages drawing, removing and adding cards during gameplay, acting as the player's active pile.   
+<img src="./images/Hand.png" width= "300" height= "300">
 
 ### Player
-The *Player* class represents a participant and stores their personal pile of cards. It performs actions such as flipping cards, choosing attributes and receiving lost cards. 
-![](./images/Player.png)
+The *Player* class represents a participant and stores their personal pile of cards. It performs actions such as flipping cards, choosing attributes and receiving lost cards.   
+<img src="./images/Player.png" width= "300" height= "350">
 
 ### Game
-The *Game* class controls the overall flow, enforcing rules, managing turns, resolving rounds and determining when the game ends. It coordinates all other classes to run the gameplay loop. 
-![](./images/Game.png)
+The *Game* class controls the overall flow, enforcing rules, managing turns, resolving rounds and determining when the game ends. It coordinates all other classes to run the gameplay loop.   
+<img src="./images/Game.png" width= "300" height= "400">
 
 
 ## Part C - Class Diagram
-Create a UML class diagram including :
-- All classes
-- Attributes and methods
-- Relationships (association, aggregation, inheritance if used)
+<img src="./images/UML_Class_Diagram.png" width= "300" height= "400">
 
-Must include :
-- Clear structure
-- Correct relationships
-- At leat 2 annotated design decisions
 
 ## Part D - Game Mechanics Design
 ### How the game works :
@@ -139,6 +103,7 @@ This could be fixed with a shield card that can prevent a player from receving t
 - Losing the ability to add to the pile for the next two rounds
 
 ### Structure Chart
+<img src="./images/Structure_Chart.png" width= "300" height= "200">
 
 
 ## Part E - Interface and Car Design ( storyboards )
@@ -151,28 +116,49 @@ Must include :
 - Clear layout of information
 - Storyboards and/or walk through
 
+### Card Design - Wireframe
+<img src="./images/Wireframe.png" width= "300" height= "350">
+
+### Card Design - Example
+<img src="./images/Card_Example.png" width= "250" height= "350">
+
+### Storyboard 
+
+
 ## Part F - Social, Ethical and Legal Implications
 ### Individual Impact
-- How could you game influence user behaviour or decision-making?
-- Could it encourage bias (e.g. favouring expensive or high-performance cars)?
-- What respomsibilites do you have as a designer to present fairinformation?
+**How could you game influence user behaviour or decision-making?**
+My game can influence user behaviour by encouraging players to compare numbers, balance risks and make quick strategic decisions. Over time, this strengthens skills like pattern recognition, probability thinking and decision-making under pressure. 
+
+**Could it encourage bias (e.g. favouring expensive or high-performance cars)?**
+As high-value attributes often win rounds, the game may unintentionally make players view expensive or high-performance cars as "better". However, the attributes of acceleration and cool factor help balance this out, since even older or less powerful cars can score higher in these areas. 
+
+**What responsibilities do you have as a designer to present fair information?**
+As a designer, I am responsible for presenting information that is accurate and not misleading. To support this, all attributes will be correct, well-sourced and clearly presented so every card is fair within the game.
 
 ### Social Impact
-- How might your game reinforce stereotypes or inequalities (e.g. wealth, status, access to vehicles)?
-- Does our system gavour certain types of users or cars?
-- How could your design be made more inclusive or fair?
+**How might your game reinforce stereotypes or inequalities (e.g. wealth, status, access to vehicles)?**
+My game might reinforce social inequalities by making luxury or high-status cars seem more desirable because they simply have larger numbers. This can unintentionally mirror real-word hierarchies around wealth and access to vehicles. 
+
+**Does your system favour certain types of users or cars?**
+My system could favour players who draw extreme-value cards, giving them more opporutinities to win rounds. This also highlights high-performance vehicles more prominently than everyday or practical ones. However, they are mainly balanced out by the attributes that favour slower acceleration time or by aesthetics. 
+
+**How could your design be made more inclusive or fair?**
+The design could be made more inclusive and fair by adding attributes that reflect everyday concerns like safety, reliability or accessibility. Including a larger range of vehicles (so more cards) and giving more unique davantages to low-performance cards could help create a more balanced experience. 
 
 ### Environmental Impact
-- How could your game influence attitudes toward fuel use, emissions or sustainability?
-- Does your attribute selection promote or ignore environmental considerations?
-- What changes could you make to encourage more environmentally responsible thinking?
+**How could your game influence attitudes toward fuel use, emissions or sustainability?**
+My game could influence attributes toward sustainability by prompting players to think about how attributes like horsepower relate to fuel use and emissions. Additonally, including electric cars could also spark curiosity about environmental impacts, even if the game doesn't mention it directly. 
+
+**Does your attribute selection promote or ignore environmental considerations?** 
+My current attribute selection focuses mainly on performance and cost, which means that environmental considerations like emissions, fuel efficiency or electric range are not promoted and mainly ignored.
+
+**What changes could you make to encourage more environmentally responsible thinking?**
+I could encourage environmentally responsible thinking by adding attributes such as CO2 emmissions, fuel efficiency or carbon footprint. Other rules that I could consider are rewarding low-emission vehicles, which could help players recognise sustainability.
 
 ### Legal Considerations
-- What legal issues could arise from using real-world car data (e.g. ownership, copyright, accuracy)?
-- How would you ensure your system avoids misleading users?
+**What legal issues could arise from using real-world car data (e.g. ownership, copyright, accuracy)?**
+Legal issues could arise from using real-word car names, images or statistics because they are often protected by copyright or trademarks. Inaccurate data could also create problems with brand representation, expecially for famous companies.
 
-
-questions i need to ask:
-- what do tyou mean by a storyboard or a walk thorugh and how is that different from just explaining the game mechanics
-- check my strucute chart
-- check my uml class diagram
+**How would you ensure your system avoids misleading users?**
+I could avoid misleading users by using original photos, verifying all data and including a disclaimer that the statistics are simplified for a smoother gameplay. 
