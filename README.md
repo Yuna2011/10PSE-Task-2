@@ -8,7 +8,7 @@ Game - Procedural
 
 - structure chart represents game mechanics
 - card design ( image, text, variables, datatypes ) = wireframe
-- interface sketch ( wireframe ) = think about screen size, standardized methods, etc.
+- interface sketch ( wireframe ) = think about screen size, standardized methods, etc. 
 - graphing in line 
 - documentation
 
