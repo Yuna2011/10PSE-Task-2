@@ -27,6 +27,7 @@ Yuna Shin
 | 6. Part F | After everything is done, I will be able to write out my social, ethical and legal implications without a problem. | Answered all the questiona of the social, ethical and legal implications. | 3 hours |
 | 7. Overall Review | After everything is done, I will need to make sure that my attributes, classes and the interface and card design all match my game. If they don't, I'll will slightly alter my game so that it will be able to match. | ASSESMENT TASK FINISHED !!| 1 hour |
 
+
 ## Part A - Data Selection and Game Attributes
 ### 1. Acceleration
 Acceleration is the most powerful attribute in the game because its range of 0.4 ~ 30 seconds is extremely wide and evenly distributed across many types of cars. This means the difference between the fastest and slowest cards is dramatic, making acceleration a highly decisive attribute when chosen. At first, acceleration might seem unfair since in real life, better cards accelerate faster, meaning a supercar with a 0.4 second time looks unbeatable. However, in the rules, the attribute with the highest number wins, which completely flips the logic. A car with a low price, low horsepower or generally a weak stats will usually has a slow acceleration time, and that slow time gives a higher number, meaning it can actually beat a supercar whose acceleration number is much lower. This makes acceleration both powerful and fair, because even the 'bad' cards have a real chance of winning against the strongest cards. The attribute stays impactful because the range is so large but it remains balanced because weaker card can outperform supercars under the scoring system of my game. 
@@ -46,6 +47,7 @@ Curb Weight reflects how heavy a vehicle is, with values ranging from very light
 ### 6. Top Speed
 Top Speed is the least powerful attribute because its values fall within a relatively tight range, with most cars reaching similar maximum speeds. This limited spread means that rounds decided by top speed are often close, with smaller differences between cards. It was chosen because top speed is one of the most iconic and easily recognized car statistics, making it a natural fit for the deck. The attribute is fair because no card gains a massive advantage from it, and the narrow range keeps outcomes unpredictable. Top Speed adds familiarity and excitement without dominating the overall balance.
 
+
 ## Part B - Class Design
 Design the object-oriented structure of your game.
 Required classes :
@@ -63,23 +65,27 @@ For each class :
 
 ### Car
 The *Car* class represents the raw data for a vehicle, storing all attribute values used during comparisons. It acts as the foundational blueprint that all cars are built from. 
+![](./images/Car.png)
 
 ### Card
 The *Card* class turns a *Car* into a playable game piece by presenting its attributes for use in each round. It serves as the object players draw, flip and compare. 
+![](./images/Card.png)
 
 ### Deck
 The *Deck* class manages the full collection of cards, handling shuffling, dealing and any shared piles. It ensures randomness and proper setup for the game.
+![](./images/Deck.png)
 
 ### Hand 
 The *Hand* class represents the collection of cards a player currently holds after the deck is divided. It manages drawing, removing and adding cards during gameplay, acting as the player's active pile. 
+![](./images/Hand.png)
 
 ### Player
 The *Player* class represents a participant and stores their personal pile of cards. It performs actions such as flipping cards, choosing attributes and receiving lost cards. 
+![](./images/Player.png)
 
 ### Game
 The *Game* class controls the overall flow, enforcing rules, managing turns, resolving rounds and determining when the game ends. It coordinates all other classes to run the gameplay loop. 
-
-
+![](./images/Game.png)
 
 
 ## Part C - Class Diagram
